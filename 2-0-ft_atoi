@@ -5,6 +5,9 @@ int     ft_atoi(char *str)
     
     sum = 0;
     sign = 1;
+    while (*str <= '!' && *str) {
+        str++;
+    }
     if ( *str == '-' || *str == '+')
     {
         if (*str == '-')
